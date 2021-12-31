@@ -78,15 +78,87 @@ const routes = [
         component: () => import('../views/Shadow/circle_progress.vue')
       },
       {
-        path: '/inscribed_angle_res',
+        path: '/inscribed_angle',
         meta:{ title: 'Box-shadow/渐变实现内切角', },
-        component: () => import('../views/Shadow/inscribed_angle_res.vue')
+        component: () => import('../views/Shadow/inscribed_angle.vue')
       },
       {
         path: '/3D_text',
         meta:{ title: 'Neon Effect 3D TEXT', },
         component: () => import('../views/Shadow/3D_text.vue')
       },
+      {
+        path: '/neon_atmosphere',
+        meta:{ title: 'box-shadow实现霓虹氖灯文字效果', },
+        component: () => import('../views/Shadow/neon_atmosphere.vue')
+      },
+      {
+        path: '/long_linear_shadow',
+        meta:{ title: '线性渐变模拟长阴影', },
+        component: () => import('../views/Shadow/long_linear_shadow.vue')
+      },
+      {
+        path: '/3D_shadow',
+        meta:{ title: '立体投影', },
+        component: () => import('../views/Shadow/3D_shadow.vue')
+      },
+      {
+        path: '/stripe_shadow_text',
+        meta:{ title: '线性渐变配合阴影实现条纹立体阴影条纹字', },
+        component: () => import('../views/Shadow/stripe_shadow_text.vue')
+      },
+      {
+        path: '/3D_text_shadow',
+        meta:{ title: '立体文字阴影', },
+        component: () => import('../views/Shadow/3D_text_shadow.vue')
+      },
+      {
+        path: '/cameo_btn',
+        meta:{ title: '浮雕风格按钮', },
+        component: () => import('../views/Shadow/cameo_btn.vue')
+      },
+      {
+        path: '/bg_animate_1',
+        meta:{ title: 'box-shadow实现背景动画1', },
+        component: () => import('../views/Shadow/bg_animate_1.vue')
+      },
+      {
+        path: '/bg_animate_2',
+        meta:{ title: 'box-shadow实现背景动画2', },
+        component: () => import('../views/Shadow/bg_animate_2.vue')
+      },
+      {
+        path: '/tiktok_logo',
+        meta:{ title: '单标签实现抖音LOGO', },
+        component: () => import('../views/Shadow/tiktok_logo.vue')
+      },
+      {
+        path: '/IE_logo',
+        meta:{ title: 'box-单标签借助 inset shadow 实现IE LOGO', },
+        component: () => import('../views/Shadow/IE_logo.vue')
+      },
+      // Pseudo
+      {
+        path: '/div_hover',
+        meta:{ title: ':hover与<div>', },
+        component: () => import('../views/Pseudo/div_hover.vue')
+      },
+      {
+        path: '/a_target',
+        meta:{ title: ':target与<a>', },
+        component: () => import('../views/Pseudo/a_target.vue')
+      },
+      {
+        path: '/radio_checked',
+        meta:{ title: ':checked与<radio>', },
+        component: () => import('../views/Pseudo/radio_checked.vue')
+      },
+      {
+        path: '/side_judge',
+        meta:{ title: '伪元素实现边界判断', },
+        component: () => import('../views/Pseudo/side_judge.vue')
+      },
+      
       // Magazine Layout
       {
         path: '/layout001',
@@ -247,6 +319,64 @@ const routes = [
     path: '/3D_text_res',
     component: () => import('../views/Shadow/3D_text_res.vue')
   },
+  {
+    path: '/neon_atmosphere_res',
+    component: () => import('../views/Shadow/neon_atmosphere_res.vue')
+  },
+  {
+    path: '/long_linear_shadow_res',
+    component: () => import('../views/Shadow/long_linear_shadow_res.vue')
+  },
+  {
+    path: '/3D_shadow_res',
+    component: () => import('../views/Shadow/3D_shadow_res.vue')
+  },
+  {
+    path: '/stripe_shadow_text_res',
+    component: () => import('../views/Shadow/stripe_shadow_text_res.vue')
+  },
+  {
+    path: '/3D_text_shadow_res',
+    component: () => import('../views/Shadow/3D_text_shadow_res.vue')
+  },
+  {
+    path: '/cameo_btn_res',
+    component: () => import('../views/Shadow/cameo_btn_res.vue')
+  },
+  {
+    path: '/bg_animate_1_res',
+    component: () => import('../views/Shadow/bg_animate_1_res.vue')
+  },
+  {
+    path: '/bg_animate_2_res',
+    component: () => import('../views/Shadow/bg_animate_2_res.vue')
+  },
+  {
+    path: '/tiktok_logo_res',
+    component: () => import('../views/Shadow/tiktok_logo_res.vue')
+  },
+  {
+    path: '/IE_logo_res',
+    component: () => import('../views/Shadow/IE_logo_res.vue')
+  },
+  // Pseudo
+  {
+    path: '/div_hover_res',
+    component: () => import('../views/Pseudo/div_hover_res.vue')
+  },
+  {
+    path: '/a_target_res',
+    component: () => import('../views/Pseudo/a_target_res.vue')
+  },
+  {
+    path: '/radio_checked_res',
+    component: () => import('../views/Pseudo/radio_checked_res.vue')
+  },
+  {
+    path: '/side_judge_res',
+    component: () => import('../views/Pseudo/side_judge_res.vue')
+  },
+  
 ]
 
 const router = createRouter({

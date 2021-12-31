@@ -38,7 +38,9 @@
             display: flex;
 
             .code {
-                flex: 1
+                flex: 1;
+                white-space: break-spaces;
+                line-height: 25px;
             }
 
             .code-type {

@@ -105,12 +105,12 @@
               { key: '/shade', title: 'box-shadow 实现半透明遮罩' },
               { key: '/circle_progress', title: 'Box-shadow实现圆环进度条动画' },
               { key: '/inscribed_angle', title: 'Box-shadow/渐变实现内切角' },
+              { key: '/3D_text_shadow', title: '立体文字阴影' },
               { key: '/3D_text', title: 'Neon Effect 3D TEXT' },
+              { key: '/3D_shadow', title: '立体投影' },
               { key: '/neon_atmosphere', title: 'box-shadow实现霓虹氖灯文字效果' },
               { key: '/long_linear_shadow', title: '线性渐变模拟长阴影' },
-              { key: '/3D_shadow', title: '立体投影' },
               { key: '/stripe_shadow_text', title: '线性渐变配合阴影实现条纹立体阴影条纹字' },
-              { key: '/3D_text_shadow', title: '立体文字阴影' },
               { key: '/cameo_btn', title: '浮雕风格按钮' },
               { key: '/bg_animate_1', title: 'box-shadow实现背景动画1' },
               { key: '/bg_animate_2', title: 'box-shadow实现背景动画2' },
@@ -119,10 +119,20 @@
             ]
           },
           {
+            key: 'pseudo',
+            icon: "fa fa-pie-chart",
+            subNavs: [
+              { key: '/div_hover', title: ':hover与<div>' },
+              { key: '/a_target', title: ':target与<a>' },
+              { key: '/radio_checked', title: ':checked与<radio>' },
+              { key: '/side_judge', title: '伪元素实现边界判断' },
+            ]
+          },
+          {
             key: 'MagazineLayout-1',
             icon: "fa fa-paint-brush",
             subNavs: new Array(10).fill(0).map((e,i)=>{
-              let index = i.toString().padStart(2,'0');
+              let index = (i+1).toString().padStart(2,'0');
               return {
                 key: '/layout0' + index,
                 title: 'Layout0' + index
@@ -133,7 +143,7 @@
             key: 'MagazineLayout-2',
             icon: "fa fa-paw",
             subNavs: new Array(10).fill(0).map((e,i)=>{
-              let index = (i+10).toString();
+              let index = (i+11).toString();
               return {
                 key: '/layout0' + index,
                 title: 'Layout0' + index

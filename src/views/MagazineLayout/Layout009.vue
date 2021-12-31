@@ -160,6 +160,7 @@ Magnam pariatur ex velit fugit ullam vitae atque reprehenderit unde laborum dolo
         .content {
             font-size: 25px;
             padding: 50px 30px ;
+            text-align: left;
             .content1 {
                 display: grid;
                 grid-template-columns: repeat(2,1fr);
