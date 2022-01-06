@@ -1,5 +1,5 @@
 <template>
-    <div class='a-target-contain'>
+    <div class='tab-checked-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"

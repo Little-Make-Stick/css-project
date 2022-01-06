@@ -1,12 +1,13 @@
 <template>
   <div class="home-contain">
     <el-container style="height: 100vh; border: 1px solid #eee">
+      <!-- 支持路由，并根据路由动态设置高亮 -->
       <el-menu router :default-active="$route.path" :collapse="isCollapse">
         <template v-for="(item,i) in navsList" :key="i">
           <el-sub-menu :index="item.key" popper-append-to-body>
             <template #title>
               <el-icon>
-                <i :class="item.icon" ></i>
+                <i :class="item.icon"></i>
               </el-icon>
               <span>{{item.key}}</span>
             </template>
@@ -17,6 +18,12 @@
             </el-menu-item-group>
           </el-sub-menu>
         </template>
+        <el-menu-item :index="$route" @click="isCollapse = !isCollapse">
+          <el-icon>
+            <i class="fa fa-bars"></i>
+          </el-icon>
+          <span>收起/展开</span>
+        </el-menu-item>
       </el-menu>
 
       <el-container>
@@ -123,16 +130,103 @@
             icon: "fa fa-pie-chart",
             subNavs: [
               { key: '/div_hover', title: ':hover与<div>' },
-              { key: '/a_target', title: ':target与<a>' },
+              // { key: '/a_target', title: ':target与<a>' },
               { key: '/radio_checked', title: ':checked与<radio>' },
               { key: '/side_judge', title: '伪元素实现边界判断' },
+              { key: '/bubble', title: '伪元素+border实现气泡对话框' },
+              { key: '/tab_checked', title: '使用 checked 伪类实现纯 CSS Tab 切换' },
+              { key: '/tab_target', title: '使用 target 伪类实现纯 CSS Tab 切换' },
+              { key: '/tab_focus_within', title: '使用 focus-within 伪类实现纯 CSS Tab 切换' },
+              { key: '/input_mutual', title: ' input 输入交互' },
+              { key: '/JueJin_login_focus_within', title: '掘金登陆特效' },
+              { key: '/dot_loading', title: '伪元素实现打点 loading 效果' },
+              { key: '/shade_line_loading', title: '伪元素遮罩实现线条 loading 效果' },
+              { key: '/border_not', title: '使用:not()伪类控制特殊边框样式' },
+              { key: '/indistinct_not', title: '使用:not()伪类实现弹窗背景元素模糊' },
+            ]
+          },
+          {
+            key: 'filter',
+            icon: "fa fa-filter",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'border',
+            icon: "fa fa-hourglass-o",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'gradient',
+            icon: "fa-square",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'text',
+            icon: "fa fa-text-height",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'mix',
+            icon: "fa fa-arrows-alt",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: '3d',
+            icon: "fa fa-codepen",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'animate',
+            icon: "fa fa-wpexplorer",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'text',
+            icon: "fa fa-text-height",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'wheel',
+            icon: "fa fa-support",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'doodle',
+            icon: "fa fa-object-group",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+            ]
+          },
+          {
+            key: 'svg',
+            icon: "fa fa-smile-o",
+            subNavs: [
+              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
             ]
           },
           {
             key: 'MagazineLayout-1',
             icon: "fa fa-paint-brush",
-            subNavs: new Array(10).fill(0).map((e,i)=>{
-              let index = (i+1).toString().padStart(2,'0');
+            subNavs: new Array(10).fill(0).map((e, i) => {
+              let index = (i + 1).toString().padStart(2, '0');
               return {
                 key: '/layout0' + index,
                 title: 'Layout0' + index
@@ -142,8 +236,8 @@
           {
             key: 'MagazineLayout-2',
             icon: "fa fa-paw",
-            subNavs: new Array(10).fill(0).map((e,i)=>{
-              let index = (i+11).toString();
+            subNavs: new Array(10).fill(0).map((e, i) => {
+              let index = (i + 11).toString();
               return {
                 key: '/layout0' + index,
                 title: 'Layout0' + index
@@ -154,8 +248,8 @@
             key: 'Shape',
             icon: "fa fa-cube",
             subNavs: [
-              {key: '/christmas-tree',title: 'christmas-tree'},
-              {key: '/text-gradient',title: 'text-gradient'},
+              { key: '/christmas-tree', title: 'christmas-tree' },
+              { key: '/text-gradient', title: 'text-gradient' },
             ]
           },
         ]
@@ -179,12 +273,13 @@
   })
 </script>
 <style lang="scss" scoped>
-$theme-color: #42b983;
+  $theme-color: #42b983;
+
   .el-main {
     padding: 0 !important;
   }
 
-  .el-menu-item.is-active{
+  .el-menu-item.is-active {
     color: $theme-color;
     border-left: 4px solid $theme-color;
   }
@@ -194,40 +289,56 @@ $theme-color: #42b983;
   }
 
   ul[role="menubar"].el-menu {
+    /* 高度固定，可滚动，不因目录撑开屏幕 */
     overflow-y: scroll;
+    /* 宽度固定，不滚动 */
     overflow-x: hidden;
+    /* 设置展开菜单的宽度 */
     width: 350px;
     min-width: 350px;
+    /* 底部预留一个菜单项的高度给收缩菜单 */
+    padding-bottom: 56px;
   }
-  ul[role="menubar"].el-menu.el-menu--collapse{
+
+  ul[role="menubar"].el-menu.el-menu--collapse {
+    /* 设置收缩是的菜单宽度 */
     width: 64px;
     min-width: 64px;
-    overflow-y: hidden;
+    /* 收缩时高度固定，自动显示或隐藏滚动条 */
+    overflow-y: auto;
   }
+
   /* 滚动条整体部分 */
-  ul[role="menubar"].el-menu::-webkit-scrollbar{
+  ul[role="menubar"].el-menu::-webkit-scrollbar {
     background: azure;
     width: 6px;
   }
 
   /* 外层轨道 */
-  ul[role="menubar"].el-menu::-webkit-scrollbar-track{
-    
-  }
+  ul[role="menubar"].el-menu::-webkit-scrollbar-track {}
 
   /* 内层滚动槽 */
-  ul[role="menubar"].el-menu::-webkit-scrollbar-track-piece{
+  ul[role="menubar"].el-menu::-webkit-scrollbar-track-piece {
     background: #ececf5;
   }
 
   /* 滚动的滑块 */
-  ul[role="menubar"].el-menu::-webkit-scrollbar-thumb{
+  ul[role="menubar"].el-menu::-webkit-scrollbar-thumb {
     background: $theme-color;
     border-radius: 10px;
   }
 
   /* 边角 */
-  ul[role="menubar"].el-menu::-webkit-scrollbar-corner{
+  ul[role="menubar"].el-menu::-webkit-scrollbar-corner {}
 
+  ul.el-menu>.el-menu-item {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 350px;
+  }
+
+  ul.el-menu.el-menu--collapse>.el-menu-item {
+    width: 64px;
   }
 </style>

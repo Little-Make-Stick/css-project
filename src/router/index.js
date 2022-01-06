@@ -10,155 +10,215 @@ const routes = [
     path: '/home',
     name: 'Home',
     component: Home,
-    children:[
+    children: [
       {
         path: '/h_v_center',
-        meta:{ title: '实现水平垂直居中最便捷的方法', },
+        meta: { title: '实现水平垂直居中最便捷的方法', },
         component: () => import('../views/Layout/h_v_center.vue')
       },
       {
         path: '/double_winds',
-        meta:{ title: '双飞翼布局', },
+        meta: { title: '双飞翼布局', },
         component: () => import('../views/Layout/double_winds.vue')
       },
       {
         path: '/grail',
-        meta:{ title: '圣杯布局', },
+        meta: { title: '圣杯布局', },
         component: () => import('../views/Layout/grail.vue')
       },
       {
         path: '/flex_grail',
-        meta:{ title: 'flex实现圣杯布局', },
+        meta: { title: 'flex实现圣杯布局', },
         component: () => import('../views/Layout/flex_grail.vue')
       },
       {
         path: '/column_waterfall',
-        meta:{ title: 'CSS实现瀑布流布局（column）', },
+        meta: { title: 'CSS实现瀑布流布局（column）', },
         component: () => import('../views/Layout/column_waterfall.vue')
       },
       {
         path: '/flex_waterfall',
-        meta:{ title: 'CSS实现瀑布流布局（flex）', },
+        meta: { title: 'CSS实现瀑布流布局（flex）', },
         component: () => import('../views/Layout/flex_waterfall.vue')
       },
       {
         path: '/grid_waterfall',
-        meta:{ title: 'CSS实现瀑布流布局（grid）', },
+        meta: { title: 'CSS实现瀑布流布局（grid）', },
         component: () => import('../views/Layout/grid_waterfall.vue')
       },
       {
         path: '/muticols_sameheight',
-        meta:{ title: '6种实现多列等高的方法', },
+        meta: { title: '6种实现多列等高的方法', },
         component: () => import('../views/Layout/muticols_sameheight.vue')
       },
       {
         path: '/muti_rowspan_colspan',
-        meta:{ title: '多方案实现跨行或跨列布局', },
+        meta: { title: '多方案实现跨行或跨列布局', },
         component: () => import('../views/Layout/muti_rowspan_colspan.vue')
       },
       {
         path: '/width_grow',
-        meta:{ title: '多种方案实现单列等宽，其他多列自适应均匀布局', },
+        meta: { title: '多种方案实现单列等宽，其他多列自适应均匀布局', },
         component: () => import('../views/Layout/width_grow.vue')
       },
       // Shadow
       {
         path: '/side_shadow',
-        meta:{ title: '单侧投影', },
+        meta: { title: '单侧投影', },
         component: () => import('../views/Shadow/side_shadow.vue')
       },
       {
         path: '/shade',
-        meta:{ title: 'box-shadow 实现半透明遮罩', },
+        meta: { title: 'box-shadow 实现半透明遮罩', },
         component: () => import('../views/Shadow/shade.vue')
       },
       {
         path: '/circle_progress',
-        meta:{ title: 'Box-shadow实现圆环进度条动画', },
+        meta: { title: 'Box-shadow实现圆环进度条动画', },
         component: () => import('../views/Shadow/circle_progress.vue')
       },
       {
         path: '/inscribed_angle',
-        meta:{ title: 'Box-shadow/渐变实现内切角', },
+        meta: { title: 'Box-shadow/渐变实现内切角', },
         component: () => import('../views/Shadow/inscribed_angle.vue')
       },
       {
         path: '/3D_text',
-        meta:{ title: 'Neon Effect 3D TEXT', },
+        meta: { title: 'Neon Effect 3D TEXT', },
         component: () => import('../views/Shadow/3D_text.vue')
       },
       {
         path: '/neon_atmosphere',
-        meta:{ title: 'box-shadow实现霓虹氖灯文字效果', },
+        meta: { title: 'box-shadow实现霓虹氖灯文字效果', },
         component: () => import('../views/Shadow/neon_atmosphere.vue')
       },
       {
         path: '/long_linear_shadow',
-        meta:{ title: '线性渐变模拟长阴影', },
+        meta: { title: '线性渐变模拟长阴影', },
         component: () => import('../views/Shadow/long_linear_shadow.vue')
       },
       {
         path: '/3D_shadow',
-        meta:{ title: '立体投影', },
+        meta: { title: '立体投影', },
         component: () => import('../views/Shadow/3D_shadow.vue')
       },
       {
         path: '/stripe_shadow_text',
-        meta:{ title: '线性渐变配合阴影实现条纹立体阴影条纹字', },
+        meta: { title: '线性渐变配合阴影实现条纹立体阴影条纹字', },
         component: () => import('../views/Shadow/stripe_shadow_text.vue')
       },
       {
         path: '/3D_text_shadow',
-        meta:{ title: '立体文字阴影', },
+        meta: { title: '立体文字阴影', },
         component: () => import('../views/Shadow/3D_text_shadow.vue')
       },
       {
         path: '/cameo_btn',
-        meta:{ title: '浮雕风格按钮', },
+        meta: { title: '浮雕风格按钮', },
         component: () => import('../views/Shadow/cameo_btn.vue')
       },
       {
         path: '/bg_animate_1',
-        meta:{ title: 'box-shadow实现背景动画1', },
+        meta: { title: 'box-shadow实现背景动画1', },
         component: () => import('../views/Shadow/bg_animate_1.vue')
       },
       {
         path: '/bg_animate_2',
-        meta:{ title: 'box-shadow实现背景动画2', },
+        meta: { title: 'box-shadow实现背景动画2', },
         component: () => import('../views/Shadow/bg_animate_2.vue')
       },
       {
         path: '/tiktok_logo',
-        meta:{ title: '单标签实现抖音LOGO', },
+        meta: { title: '单标签实现抖音LOGO', },
         component: () => import('../views/Shadow/tiktok_logo.vue')
       },
       {
         path: '/IE_logo',
-        meta:{ title: 'box-单标签借助 inset shadow 实现IE LOGO', },
+        meta: { title: 'box-单标签借助 inset shadow 实现IE LOGO', },
         component: () => import('../views/Shadow/IE_logo.vue')
       },
       // Pseudo
       {
         path: '/div_hover',
-        meta:{ title: ':hover与<div>', },
+        meta: { title: ':hover与<div>', },
         component: () => import('../views/Pseudo/div_hover.vue')
       },
       {
-        path: '/a_target',
-        meta:{ title: ':target与<a>', },
-        component: () => import('../views/Pseudo/a_target.vue')
-      },
-      {
         path: '/radio_checked',
-        meta:{ title: ':checked与<radio>', },
+        meta: { title: ':checked与<radio>', },
         component: () => import('../views/Pseudo/radio_checked.vue')
       },
       {
         path: '/side_judge',
-        meta:{ title: '伪元素实现边界判断', },
+        meta: { title: '伪元素实现边界判断', },
         component: () => import('../views/Pseudo/side_judge.vue')
       },
-      
+      {
+        path: '/bubble',
+        meta: { title: '伪元素+border实现气泡对话框', },
+        component: () => import('../views/Pseudo/bubble.vue')
+      },
+      {
+        path: '/tab_checked',
+        meta: { title: '使用 checked 伪类实现纯 CSS Tab 切换', },
+        component: () => import('../views/Pseudo/tab_checked.vue')
+      },
+      {
+        path: '/tab_target',
+        meta: { title: '使用 target 伪类实现纯 CSS Tab 切换', },
+        component: () => import('../views/Pseudo/tab_target.vue')
+      },
+      {
+        path: '/tab_focus_within',
+        meta: { title: '使用 focus-within 伪类实现纯 CSS Tab 切换', },
+        component: () => import('../views/Pseudo/tab_focus_within.vue')
+      },
+      {
+        path: '/input_mutual',
+        meta: { title: 'input 输入交互', },
+        component: () => import('../views/Pseudo/input_mutual.vue')
+      },
+      {
+        path: '/JueJin_login_focus_within',
+        meta: { title: '掘金登陆特效', },
+        component: () => import('../views/Pseudo/JueJin_login_focus_within.vue')
+      },
+      {
+        path: '/dot_loading',
+        meta: { title: '伪元素实现打点 loading 效果', },
+        component: () => import('../views/Pseudo/dot_loading.vue')
+      },
+      {
+        path: '/shade_line_loading',
+        meta: { title: '伪元素遮罩实现线条 loading 效果', },
+        component: () => import('../views/Pseudo/shade_line_loading.vue')
+      },
+      {
+        path: '/border_not',
+        meta: { title: '使用:not()伪类控制特殊边框样式', },
+        component: () => import('../views/Pseudo/border_not.vue')
+      },
+      {
+        path: '/indistinct_not',
+        meta: { title: '使用:not()伪类实现弹窗背景元素模糊', },
+        component: () => import('../views/Pseudo/indistinct_not.vue')
+      },
+      // Filter
+      // Border
+      // Gradient
+      // Mix
+      // 3D
+      // Animate
+      // Clip-path
+      // text
+      {
+        path: '/text_decoration',
+        meta: { title: '使用text-decoration实现波浪效果', },
+        component: () => import('../views/Txt/text_decoration.vue')
+      },
+      // Wheel
+      // Doodle
+      // Svg
       // Magazine Layout
       {
         path: '/layout001',
@@ -249,7 +309,7 @@ const routes = [
         path: '/text-gradient',
         component: () => import('../views/Shape/TextGradient.vue')
       },
-      
+
     ]
   },
   {
@@ -365,10 +425,6 @@ const routes = [
     component: () => import('../views/Pseudo/div_hover_res.vue')
   },
   {
-    path: '/a_target_res',
-    component: () => import('../views/Pseudo/a_target_res.vue')
-  },
-  {
     path: '/radio_checked_res',
     component: () => import('../views/Pseudo/radio_checked_res.vue')
   },
@@ -376,8 +432,77 @@ const routes = [
     path: '/side_judge_res',
     component: () => import('../views/Pseudo/side_judge_res.vue')
   },
-  
+  {
+    path: '/bubble_res',
+    component: () => import('../views/Pseudo/bubble_res.vue')
+  },
+  {
+    path: '/tab_checked_res',
+    component: () => import('../views/Pseudo/tab_checked_res.vue')
+  },
+  {
+    path: '/tab_target_res',
+    component: () => import('../views/Pseudo/tab_target_res.vue')
+  },
+  {
+    path: '/tab_focus_within_res',
+    component: () => import('../views/Pseudo/tab_focus_within_res.vue')
+  },
+  {
+    path: '/input_mutual_res',
+    component: () => import('../views/Pseudo/input_mutual_res.vue')
+  },
+  {
+    path: '/JueJin_login_focus_within_res',
+    component: () => import('../views/Pseudo/JueJin_login_focus_within_res.vue')
+  },
+  {
+    path: '/dot_loading_res',
+    component: () => import('../views/Pseudo/dot_loading_res.vue')
+  },
+  {
+    path: '/shade_line_loading_res',
+    component: () => import('../views/Pseudo/shade_line_loading_res.vue')
+  },
+  {
+    path: '/border_not_res',
+    component: () => import('../views/Pseudo/border_not_res.vue')
+  },
+  {
+    path: '/indistinct_not_res',
+    component: () => import('../views/Pseudo/indistinct_not_res.vue')
+  },
+  // Filter
+  // Border
+  // Gradient
+  // Mix
+  // 3D
+  // Animate
+  // Clip-path
+  // text
+  {
+    path: '/text_decoration_res',
+    component: () => import('../views/Txt/text_decoration_res.vue')
+  },
+  // Wheel
+  // Doodle
+  // Svg
+
 ]
+
+// {
+//   path: '/layout008',
+//   component: () => import('../views/MagazineLayout/Layout008.vue')
+// },
+// for (let i = 1; i <= 20; i++) {
+//   let fileName = '/layout0' + i.toString().padStart(2, '0');
+//   console.log(routes[1].children)
+//   routes[1].children.push({
+//     path: fileName,
+//     component: () => import('../views/MagazineLayout' + fileName),
+//   })
+// }
+
 
 const router = createRouter({
   history: createWebHashHistory(),
