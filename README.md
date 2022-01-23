@@ -67,7 +67,21 @@
 .gradient-text {
   display: inline-block;
   position: relative;
-  background-image: linear-gradient(135deg, #61bb46 0%, #61bb46 16.5%, #fdb827 16.5%, #fdb827 33.5%, #f5821f 33.5%, #f5821f 50%, #e03a3e 50%, #e03a3e 66.5%, #963d97 66.5%, #963d97 83%, #009ddc 83%, #009ddc 100%);
+  background-image: linear-gradient(
+    135deg,
+    #61bb46 0%,
+    #61bb46 16.5%,
+    #fdb827 16.5%,
+    #fdb827 33.5%,
+    #f5821f 33.5%,
+    #f5821f 50%,
+    #e03a3e 50%,
+    #e03a3e 66.5%,
+    #963d97 66.5%,
+    #963d97 83%,
+    #009ddc 83%,
+    #009ddc 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -115,3 +129,36 @@ mix-blend-mode: lighten;
 css: https://chokcoco.github.io/CSS-Inspiration/#/./layout/best-way-to-center-element
 
 magazine: https://juejin.cn/post/7037263345178656805
+
+### $emit()返回值
+
+```vue
+<custom @getData="getData></custom>
+export default{
+  methods:{
+    getData(data, callback){
+      let res = data.toString();
+      callback(res);
+    },
+  }
+}
+```
+
+```js
+this.$emit('getData', ['23','35'], val => this.arrString = val)
+```
+
+### border-radius
+border-radius : 50px 50px 50px 50px / 50px 50px 50px 50px;
+
+ 　　“/”前的四个数值表示圆角的水平半径，后面四个值表示圆角的垂直半径
+
+
+### 字符宽度
+控制字符宽度相等
+```
+p{
+  text-align: justify;
+  text-align-last: justify;
+}
+```

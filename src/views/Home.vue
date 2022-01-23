@@ -149,14 +149,32 @@
             key: 'filter',
             icon: "fa fa-filter",
             subNavs: [
-              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+              { key: '/ball_shuttle', title: '小球穿梭效果' },
+              { key: '/ball_shuttle_loading', title: '小球穿梭放大loading动画' },
+              { key: '/special_fusion', title: '特殊融合效果' },
+              { key: '/flame', title: '生成火焰效果' },
+              { key: '/ghost', title: '实现幽灵动画' },
+              { key: '/dynamic_gradient_background', title: '实现渐变背景动画' },
+              { key: '/regular_shape_shadow', title: '使用 drop-shadow 配合 clip-path 生成规则阴影' },
+              { key: '/color_shadow', title: '实现彩色阴影' },
+              { key: '/drip_effect', title: '实现滴水效果' },
+              { key: '/mix_effects', title: '实现混搭特效' },
             ]
           },
           {
             key: 'border',
             icon: "fa fa-hourglass-o",
             subNavs: [
-              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+              { key: '/line_animate', title: '线条动画' },
+              { key: '/wave_animate', title: '实现波浪动画' },
+              { key: '/charge_animate', title: '实现充电动画' },
+              { key: '/charge_ball_animate', title: '实现充电能量球动画' },
+              { key: '/non_regular_charge_ball', title: '不规则充电球' },
+              { key: '/non_regular_ball_loading', title: '不规则球Loading' },
+              { key: '/dynamic_border', title: '实现图案边框' },
+              { key: '/line_drop', title: '模拟绳子下坠' },
+              { key: '/border_line_animate', title: '边框线条动画' },
+              { key: '/typeing', title: '文字输入效果' },
             ]
           },
           {
@@ -191,7 +209,22 @@
             key: 'animate',
             icon: "fa fa-wpexplorer",
             subNavs: [
-              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+              { key: '/btn_border_animate', title: '按钮border动画效果' },
+              { key: '/curvilinear_motion', title: '曲线运动' },
+              { key: '/rect_height_wave', title: '矩形变换高度实现波浪动画' },
+              { key: '/control_animate_direct', title: '控制动画方向' },
+            ]
+          },
+          {
+            key: 'clip_path',
+            icon: "fa fa-crop",
+            subNavs: [
+              { key: '/charge_effect', title: '充电效果' },
+              { key: '/radius_gradient_border', title: '圆角渐变边框' },
+              { key: '/border_line_animate_1', title: '边框线条动画' },
+              { key: '/border_line_animate_2', title: '边框线条动画2' },
+              { key: '/fault_style_animate', title: '图片的故障艺术风格动画' },
+              { key: '/word_fracture_effect', title: '文字断裂效果' },
             ]
           },
           {

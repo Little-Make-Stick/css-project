@@ -48,6 +48,7 @@
             background-image: linear-gradient(135deg, #61bb46 0%, #61bb46 16.5%, #fdb827 16.5%, #fdb827 33.5%, #f5821f 33.5%, #f5821f 50%, #e03a3e 50%, #e03a3e 66.5%, #963d97 66.5%, #963d97 83%, #009ddc 83%, #009ddc 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            color: transparent;
             font-weight: bold;
         }
 

@@ -204,12 +204,162 @@ const routes = [
         component: () => import('../views/Pseudo/indistinct_not.vue')
       },
       // Filter
+      {
+        path: '/ball_shuttle',
+        meta: { title: '小球穿梭效果', },
+        component: () => import('../views/Filter/ball_shuttle.vue')
+      },
+      {
+        path: '/ball_shuttle_loading',
+        meta: { title: '小球穿梭放大loading动画', },
+        component: () => import('../views/Filter/ball_shuttle_loading.vue')
+      },
+      {
+        path: '/special_fusion',
+        meta: { title: '特殊融合效果', },
+        component: () => import('../views/Filter/special_fusion.vue')
+      },
+      {
+        path: '/flame',
+        meta: { title: '生成火焰效果', },
+        component: () => import('../views/Filter/flame.vue')
+      },
+      {
+        path: '/ghost',
+        meta: { title: '实现幽灵动画', },
+        component: () => import('../views/Filter/ghost.vue')
+      },
+      {
+        path: '/dynamic_gradient_background',
+        meta: { title: '实现渐变背景动画', },
+        component: () => import('../views/Filter/dynamic_gradient_background.vue')
+      },
+      {
+        path: '/regular_shape_shadow',
+        meta: { title: '使用 drop-shadow 配合 clip-path 生成规则阴影', },
+        component: () => import('../views/Filter/regular_shape_shadow.vue')
+      },
+      {
+        path: '/color_shadow',
+        meta: { title: '实现彩色阴影', },
+        component: () => import('../views/Filter/color_shadow.vue')
+      },
+      {
+        path: '/drip_effect',
+        meta: { title: '实现滴水效果', },
+        component: () => import('../views/Filter/drip_effect.vue')
+      },
+      {
+        path: '/mix_effects',
+        meta: { title: '实现混搭特效', },
+        component: () => import('../views/Filter/mix_effects.vue')
+      },
       // Border
+      {
+        path: '/wave_animate',
+        meta: { title: '实现波浪动画', },
+        component: () => import('../views/Border/wave_animate.vue')
+      },
+      {
+        path: '/charge_animate',
+        meta: { title: '实现充电动画', },
+        component: () => import('../views/Border/charge_animate.vue')
+      },
+      {
+        path: '/charge_ball_animate',
+        meta: { title: '实现充电能量球动画', },
+        component: () => import('../views/Border/charge_ball_animate.vue')
+      },
+      {
+        path: '/dynamic_border',
+        meta: { title: '实现动态边框', },
+        component: () => import('../views/Border/dynamic_border.vue')
+      },
+      {
+        path: '/line_animate',
+        meta: { title: '线条动画', },
+        component: () => import('../views/Border/line_animate.vue')
+      },
+      {
+        path: '/line_drop',
+        meta: { title: '模拟绳子下坠', },
+        component: () => import('../views/Border/line_drop.vue')
+      },
+      {
+        path: '/non_regular_charge_ball',
+        meta: { title: '不规则充电球', },
+        component: () => import('../views/Border/non_regular_charge_ball.vue')
+      },
+      {
+        path: '/non_regular_ball_loading',
+        meta: { title: '不规则球Loading', },
+        component: () => import('../views/Border/non_regular_ball_loading.vue')
+      },
+      {
+        path: '/border_line_animate',
+        meta: { title: '边框线条动画', },
+        component: () => import('../views/Border/border_line_animate.vue')
+      },
+      {
+        path: '/typeing',
+        meta: { title: '文字输入效果', },
+        component: () => import('../views/Border/typeing.vue')
+      },
       // Gradient
       // Mix
       // 3D
       // Animate
-      // Clip-path
+      {
+        path: '/btn_border_animate',
+        meta: { title: '按钮border动画效果', },
+        component: () => import('../views/Animate/btn_border_animate.vue')
+      },
+      {
+        path: '/curvilinear_motion',
+        meta: { title: '曲线运动', },
+        component: () => import('../views/Animate/curvilinear_motion.vue')
+      },
+      {
+        path: '/rect_height_wave',
+        meta: { title: '矩形变换高度实现波浪动画', },
+        component: () => import('../views/Animate/rect_height_wave.vue')
+      },
+      {
+        path: '/control_animate_direct',
+        meta: { title: '控制动画方向', },
+        component: () => import('../views/Animate/control_animate_direct.vue')
+      },
+      // Clip_path
+      {
+        path: '/charge_effect',
+        meta: { title: '充电效果', },
+        component: () => import('../views/Clip_path/charge_effect.vue')
+      },
+      {
+        path: '/radius_gradient_border',
+        meta: { title: '圆角渐变边框', },
+        component: () => import('../views/Clip_path/radius_gradient_border.vue')
+      },
+      {
+        path: '/border_line_animate_1',
+        meta: { title: '边框线条动画', },
+        component: () => import('../views/Clip_path/border_line_animate.vue')
+      },
+      {
+        path: '/border_line_animate_2',
+        meta: { title: '边框线条动画2', },
+        component: () => import('../views/Clip_path/border_line_animate_2.vue')
+      },
+      {
+        path: '/fault_style_animate',
+        meta: { title: '图片的故障艺术风格动画', },
+        component: () => import('../views/Clip_path/fault_style_animate.vue')
+      },
+      {
+        path: '/word_fracture_effect',
+        meta: { title: '文字断裂效果', },
+        component: () => import('../views/Clip_path/word_fracture_effect.vue')
+      },
       // text
       {
         path: '/text_decoration',
@@ -473,12 +623,132 @@ const routes = [
     component: () => import('../views/Pseudo/indistinct_not_res.vue')
   },
   // Filter
+  {
+    path: '/ball_shuttle_res',
+    component: () => import('../views/Filter/ball_shuttle_res.vue')
+  },
+  {
+    path: '/ball_shuttle_loading_res',
+    component: () => import('../views/Filter/ball_shuttle_loading_res.vue')
+  },
+  {
+    path: '/special_fusion_res',
+    component: () => import('../views/Filter/special_fusion_res.vue')
+  },
+  {
+    path: '/flame_res',
+    component: () => import('../views/Filter/flame_res.vue')
+  },
+  {
+    path: '/ghost_res',
+    component: () => import('../views/Filter/ghost_res.vue')
+  },
+  {
+    path: '/dynamic_gradient_background_res',
+    component: () => import('../views/Filter/dynamic_gradient_background_res.vue')
+  },
+  {
+    path: '/regular_shape_shadow_res',
+    component: () => import('../views/Filter/regular_shape_shadow_res.vue')
+  },
+  {
+    path: '/color_shadow_res',
+    component: () => import('../views/Filter/color_shadow_res.vue')
+  },
+  {
+    path: '/drip_effect_res',
+    component: () => import('../views/Filter/drip_effect_res.vue')
+  },
+  {
+    path: '/mix_effects_res',
+    component: () => import('../views/Filter/mix_effects_res.vue')
+  },
   // Border
+  {
+    path: '/wave_animate_res',
+    component: () => import('../views/Border/wave_animate_res.vue')
+  },
+  {
+    path: '/charge_animate_res',
+    component: () => import('../views/Border/charge_animate_res.vue')
+  },
+  {
+    path: '/charge_ball_animate_res',
+    component: () => import('../views/Border/charge_ball_animate_res.vue')
+  },
+  {
+    path: '/dynamic_border_res',
+    component: () => import('../views/Border/dynamic_border_res.vue')
+  },
+  {
+    path: '/line_animate_res',
+    component: () => import('../views/Border/line_animate_res.vue')
+  },
+  {
+    path: '/line_drop_res',
+    component: () => import('../views/Border/line_drop_res.vue')
+  },
+  {
+    path: '/non_regular_ball_loading_res',
+    component: () => import('../views/Border/non_regular_ball_loading_res.vue')
+  },
+  {
+    path: '/non_regular_charge_ball_res',
+    component: () => import('../views/Border/non_regular_charge_ball_res.vue')
+  },
+  {
+    path: '/border_line_animate_res',
+    component: () => import('../views/Border/border_line_animate_res.vue')
+  },
+  {
+    path: '/typeing_res',
+    component: () => import('../views/Border/typeing_res.vue')
+  },
   // Gradient
   // Mix
   // 3D
   // Animate
-  // Clip-path
+  {
+    path: '/btn_border_animate_res',
+    component: () => import('../views/Animate/btn_border_animate_res.vue')
+  },
+  {
+    path: '/curvilinear_motion_res',
+    component: () => import('../views/Animate/curvilinear_motion_res.vue')
+  },
+  {
+    path: '/rect_height_wave_res',
+    component: () => import('../views/Animate/rect_height_wave_res.vue')
+  },
+  {
+    path: '/control_animate_direct_res',
+    component: () => import('../views/Animate/control_animate_direct_res.vue')
+  },
+  // Clip_path
+  {
+    path: '/charge_effect_res',
+    component: () => import('../views/Clip_path/charge_effect_res.vue')
+  },
+  {
+    path: '/radius_gradient_border_res',
+    component: () => import('../views/Clip_path/radius_gradient_border_res.vue')
+  },
+  {
+    path: '/border_line_animate_1_res',
+    component: () => import('../views/Clip_path/border_line_animate_res.vue')
+  },
+  {
+    path: '/border_line_animate_2_res',
+    component: () => import('../views/Clip_path/border_line_animate_2_res.vue')
+  },
+  {
+    path: '/fault_style_animate_res',
+    component: () => import('../views/Clip_path/fault_style_animate_res.vue')
+  },
+  {
+    path: '/word_fracture_effect_res',
+    component: () => import('../views/Clip_path/word_fracture_effect_res.vue')
+  },
   // text
   {
     path: '/text_decoration_res',
