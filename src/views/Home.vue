@@ -238,7 +238,27 @@
             key: 'wheel',
             icon: "fa fa-support",
             subNavs: [
-              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+              { key: '/retina_1px', title: 'retina屏下的1px线' },
+              { key: '/border_nested_text', title: '边框嵌套文字' },
+              { key: '/img_switch_preview', title: '图片切换预览功能' },
+              { key: '/dark_char_rain', title: '暗黑字符雨动画' },
+              { key: '/chorme_tab', title: 'chrome的Tab分栏' },
+
+              { key: '/huawei_charge_animate', title: '华为充电动画' },
+              { key: '/night_room', title: '夜晚居室图' },
+              { key: '/pie_chart', title: '360°饼图' },
+              { key: '/mouse_follow_1', title: '鼠标跟随1' },
+              { key: '/mouse_follow_2', title: '鼠标跟随2' },
+
+              { key: '/mouse_follow_3', title: '鼠标跟随3' },
+              { key: '/art_graphics', title: 'box-reflect实现艺术图形' },
+              { key: '/light_shadow_btn', title: 'box-reflect实现光影按钮' },
+              { key: '/threed_photowall_reflection', title: 'box-reflect实现3D照片墙倒影效果' },
+              { key: '/text_split', title: '文字分裂特效' },
+
+              { key: '/text_split_move', title: '文字分裂移动特效' },
+              { key: '/text_fault', title: 'CSS文字故障效果' },
+
             ]
           },
           {

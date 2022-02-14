@@ -367,6 +367,91 @@ const routes = [
         component: () => import('../views/Txt/text_decoration.vue')
       },
       // Wheel
+      {
+        path: '/retina_1px',
+        meta: { title: 'retina屏下的1px线', },
+        component: () => import('../views/Wheel/retina_1px.vue')
+      },
+      {
+        path: '/border_nested_text',
+        meta: { title: '边框嵌套文字', },
+        component: () => import('../views/Wheel/border_nested_text.vue')
+      },
+      {
+        path: '/img_switch_preview',
+        meta: { title: '图片切换预览功能', },
+        component: () => import('../views/Wheel/img_switch_preview.vue')
+      },
+      {
+        path: '/dark_char_rain',
+        meta: { title: '暗黑字符雨动画', },
+        component: () => import('../views/Wheel/dark_char_rain.vue')
+      },
+      {
+        path: '/chorme_tab',
+        meta: { title: 'chrome的Tab分栏', },
+        component: () => import('../views/Wheel/chorme_tab.vue')
+      },
+      {
+        path: '/huawei_charge_animate',
+        meta: { title: '华为充电动画', },
+        component: () => import('../views/Wheel/huawei_charge_animate.vue')
+      },
+      {
+        path: '/night_room',
+        meta: { title: '夜晚居室图', },
+        component: () => import('../views/Wheel/night_room.vue')
+      },
+      {
+        path: '/pie_chart',
+        meta: { title: '360°饼图', },
+        component: () => import('../views/Wheel/pie_chart.vue')
+      },
+      {
+        path: '/mouse_follow_1',
+        meta: { title: '鼠标跟随1', },
+        component: () => import('../views/Wheel/mouse_follow_1.vue')
+      },
+      {
+        path: '/mouse_follow_2',
+        meta: { title: '鼠标跟随2', },
+        component: () => import('../views/Wheel/mouse_follow_2.vue')
+      },
+      {
+        path: '/mouse_follow_3',
+        meta: { title: '鼠标跟随3', },
+        component: () => import('../views/Wheel/mouse_follow_3.vue')
+      },
+      {
+        path: '/art_graphics',
+        meta: { title: 'box-reflect实现艺术图形', },
+        component: () => import('../views/Wheel/art_graphics.vue')
+      },
+      {
+        path: '/light_shadow_btn',
+        meta: { title: 'box-reflect实现光影按钮', },
+        component: () => import('../views/Wheel/light_shadow_btn.vue')
+      },
+      {
+        path: '/threed_photowall_reflection',
+        meta: { title: 'box-reflect实现3D照片墙倒影效果', },
+        component: () => import('../views/Wheel/threed_photowall_reflection.vue')
+      },
+      {
+        path: '/text_split',
+        meta: { title: '文字分裂特效', },
+        component: () => import('../views/Wheel/text_split.vue')
+      },
+      {
+        path: '/text_split_move',
+        meta: { title: '文字分裂移动特效', },
+        component: () => import('../views/Wheel/text_split_move.vue')
+      },
+      {
+        path: '/text_fault',
+        meta: { title: 'CSS文字故障效果', },
+        component: () => import('../views/Wheel/text_fault.vue')
+      },
       // Doodle
       // Svg
       // Magazine Layout
@@ -755,6 +840,74 @@ const routes = [
     component: () => import('../views/Txt/text_decoration_res.vue')
   },
   // Wheel
+  {
+    path: '/retina_1px_res',
+    component: () => import('../views/Wheel/retina_1px_res.vue')
+  },
+  {
+    path: '/border_nested_text_res',
+    component: () => import('../views/Wheel/border_nested_text_res.vue')
+  },
+  {
+    path: '/img_switch_preview_res',
+    component: () => import('../views/Wheel/img_switch_preview_res.vue')
+  },
+  {
+    path: '/dark_char_rain_res',
+    component: () => import('../views/Wheel/dark_char_rain_res.vue')
+  },
+  {
+    path: '/chorme_tab_res',
+    component: () => import('../views/Wheel/chorme_tab_res.vue')
+  },
+  {
+    path: '/huawei_charge_animate_res',
+    component: () => import('../views/Wheel/huawei_charge_animate_res.vue')
+  },
+  {
+    path: '/night_room_res',
+    component: () => import('../views/Wheel/night_room_res.vue')
+  },
+  {
+    path: '/pie_chart_res',
+    component: () => import('../views/Wheel/pie_chart_res.vue')
+  },
+  {
+    path: '/mouse_follow_1_res',
+    component: () => import('../views/Wheel/mouse_follow_1_res.vue')
+  },
+  {
+    path: '/mouse_follow_2_res',
+    component: () => import('../views/Wheel/mouse_follow_2_res.vue')
+  },
+  {
+    path: '/mouse_follow_3_res',
+    component: () => import('../views/Wheel/mouse_follow_3_res.vue')
+  },
+  {
+    path: '/art_graphics_res',
+    component: () => import('../views/Wheel/art_graphics_res.vue')
+  },
+  {
+    path: '/light_shadow_btn_res',
+    component: () => import('../views/Wheel/light_shadow_btn_res.vue')
+  },
+  {
+    path: '/threed_photowall_reflection_res',
+    component: () => import('../views/Wheel/threed_photowall_reflection_res.vue')
+  },
+  {
+    path: '/text_split_res',
+    component: () => import('../views/Wheel/text_split_res.vue')
+  },
+  {
+    path: '/text_split_move_res',
+    component: () => import('../views/Wheel/text_split_move_res.vue')
+  },
+  {
+    path: '/text_fault_res',
+    component: () => import('../views/Wheel/text_fault_res.vue')
+  },
   // Doodle
   // Svg
 

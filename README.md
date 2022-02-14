@@ -162,3 +162,30 @@ p{
   text-align-last: justify;
 }
 ```
+
+### ratina 1px 
+* viewport + rem
+
+  ```html
+  <!-- devicePixelRatio = 1  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- devicePixelRatio = 2  -->
+  <meta name="viewport" content="initial-scale=0.5, maximum-scale=0.5, minimum-scale=0.5, user-scalable=no">
+  <!-- devicePixelRatio = 3  -->
+  <meta name="viewport" content="initial-scale=0.3333333333333333, maximum-scale=0.3333333333333333, minimum-scale=0.3333333333333333, user-scalable=no">
+  ```
+
+  ```js
+  var metaEl = document.createElement('meta');
+  var scale = isRetina ? 0.5 : 1;
+  metaEl.setAttribute('name', 'viewport');
+  metaEl.setAttribute('content', 'initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+  if (document.head || document.querySelector("head")) {
+      document.head.appendChild(metaEl);
+  } else {
+      var wrap = document.createElement('head');
+      wrap.appendChild(metaEl);
+      document.write(`<html>${wrap.innerHTML}</html>`);
+      document.close();
+  }
+  ```
