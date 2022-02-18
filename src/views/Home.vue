@@ -181,7 +181,37 @@
             key: 'gradient',
             icon: "fa-square",
             subNavs: [
-              { key: '/text_decoration', title: '使用text-decoration实现波浪效果' },
+              { key: '/tv_noise_animate', title: 'TV噪音动画' },
+              { key: '/ground_glass', title: '毛玻璃' },
+              { key: '/roll_shadow', title: '滚动阴影' },
+              { key: '/streamer_text', title: '流光文字' },
+              { key: '/conic_line_border', title: 'conic线条border' },
+
+              { key: '/light_shadow_border', title: '光影border' },
+              { key: '/circle_progress', title: '圆环进度图' },
+              { key: '/cool_light_shadow', title: '炫酷光影' },
+              { key: '/arrow_symbol', title: '箭头符号' },
+              { key: '/linear_line_border', title: 'linear线条border' },
+
+              { key: '/maze_like_graph', title: '类迷宫图形' },
+              { key: '/inscribed_angle', title: '内切角' },
+              { key: '/progress_bar_animate', title: '进度条运动' },
+              { key: '/scroll_progress_bar', title: '滚动进度条' },
+              { key: '/stripe_character', title: '条纹字' },
+
+              { key: '/underline', title: '下划线' },
+              { key: '/img_changes', title: '图片变幻' },
+              { key: '/words_gradual_appearance', title: '文字的渐现' },
+              { key: '/img_transform', title: '图片转场变换' },
+              { key: '/bubble_button_click_effect', title: '气泡按钮点击效果' },
+              
+              { key: '/coupon_wave_shape', title: '优惠券波浪造型' },
+              { key: '/stage_light_focus', title: '舞台灯光聚焦' },
+              { key: '/wave_border', title: '波浪边框' },
+              { key: '/wavy_underline', title: '波浪下划线' },
+              { key: '/wave_progress_box', title: '波浪进度框' },
+
+              { key: '/artistic_bg', title: '艺术背景' },
             ]
           },
           {

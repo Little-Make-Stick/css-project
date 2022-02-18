@@ -306,6 +306,136 @@ const routes = [
         component: () => import('../views/Border/typeing.vue')
       },
       // Gradient
+      {
+        path: '/tv_noise_animate',
+        meta: { title: 'TV噪音动画', },
+        component: () => import('../views/Gradient/tv_noise_animate.vue')
+      },
+      {
+        path: '/ground_glass',
+        meta: { title: '毛玻璃', },
+        component: () => import('../views/Gradient/ground_glass.vue')
+      },
+      {
+        path: '/roll_shadow',
+        meta: { title: '滚动阴影', },
+        component: () => import('../views/Gradient/roll_shadow.vue')
+      },
+      {
+        path: '/streamer_text',
+        meta: { title: '流光文字', },
+        component: () => import('../views/Gradient/streamer_text.vue')
+      },
+      {
+        path: '/conic_line_border',
+        meta: { title: 'conic线条border', },
+        component: () => import('../views/Gradient/conic_line_border.vue')
+      },
+      {
+        path: '/light_shadow_border',
+        meta: { title: '光影border', },
+        component: () => import('../views/Gradient/light_shadow_border.vue')
+      },
+      {
+        path: '/circle_progress',
+        meta: { title: '圆环进度图', },
+        component: () => import('../views/Gradient/circle_progress.vue')
+      },
+      {
+        path: '/cool_light_shadow',
+        meta: { title: '炫酷光影', },
+        component: () => import('../views/Gradient/cool_light_shadow.vue')
+      },
+      {
+        path: '/arrow_symbol',
+        meta: { title: '箭头符号', },
+        component: () => import('../views/Gradient/arrow_symbol.vue')
+      },
+      {
+        path: '/linear_line_border',
+        meta: { title: 'linear线条border', },
+        component: () => import('../views/Gradient/linear_line_border.vue')
+      },
+      {
+        path: '/maze_like_graph',
+        meta: { title: '类迷宫图形', },
+        component: () => import('../views/Gradient/maze_like_graph.vue')
+      },
+      {
+        path: '/inscribed_angle',
+        meta: { title: '内切角', },
+        component: () => import('../views/Gradient/inscribed_angle.vue')
+      },
+      {
+        path: '/progress_bar_animate',
+        meta: { title: '进度条运动', },
+        component: () => import('../views/Gradient/progress_bar_animate.vue')
+      },
+      {
+        path: '/scroll_progress_bar',
+        meta: { title: '滚动进度条', },
+        component: () => import('../views/Gradient/scroll_progress_bar.vue')
+      },
+      {
+        path: '/stripe_character',
+        meta: { title: '条纹字', },
+        component: () => import('../views/Gradient/stripe_character.vue')
+      },
+      {
+        path: '/underline',
+        meta: { title: '下划线', },
+        component: () => import('../views/Gradient/underline.vue')
+      },
+      {
+        path: '/img_changes',
+        meta: { title: '图片变幻', },
+        component: () => import('../views/Gradient/img_changes.vue')
+      },
+      {
+        path: '/words_gradual_appearance',
+        meta: { title: '文字的渐现', },
+        component: () => import('../views/Gradient/words_gradual_appearance.vue')
+      },
+      {
+        path: '/img_transform',
+        meta: { title: '图片转场变换', },
+        component: () => import('../views/Gradient/img_transform.vue')
+      },
+      {
+        path: '/bubble_button_click_effect',
+        meta: { title: '气泡按钮点击效果', },
+        component: () => import('../views/Gradient/bubble_button_click_effect.vue')
+      },
+      {
+        path: '/coupon_wave_shape',
+        meta: { title: '优惠券波浪造型', },
+        component: () => import('../views/Gradient/coupon_wave_shape.vue')
+      },
+      {
+        path: '/stage_light_focus',
+        meta: { title: '舞台灯光聚焦', },
+        component: () => import('../views/Gradient/stage_light_focus.vue')
+      },
+      {
+        path: '/wave_border',
+        meta: { title: '波浪边框', },
+        component: () => import('../views/Gradient/wave_border.vue')
+      },
+      {
+        path: '/wavy_underline',
+        meta: { title: '波浪下划线', },
+        component: () => import('../views/Gradient/wavy_underline.vue')
+      },
+      {
+        path: '/wave_progress_box',
+        meta: { title: '波浪进度框', },
+        component: () => import('../views/Gradient/wave_progress_box.vue')
+      },
+      {
+        path: '/artistic_bg',
+        meta: { title: '艺术背景', },
+        component: () => import('../views/Gradient/artistic_bg.vue')
+      },
       // Mix
       // 3D
       // Animate
@@ -790,6 +920,110 @@ const routes = [
     component: () => import('../views/Border/typeing_res.vue')
   },
   // Gradient
+  {
+    path: '/tv_noise_animate_res',
+    component: () => import('../views/Gradient/tv_noise_animate_res.vue')
+  },
+  {
+    path: '/ground_glass_res',
+    component: () => import('../views/Gradient/ground_glass_res.vue')
+  },
+  {
+    path: '/roll_shadow_res',
+    component: () => import('../views/Gradient/roll_shadow_res.vue')
+  },
+  {
+    path: '/streamer_text_res',
+    component: () => import('../views/Gradient/streamer_text_res.vue')
+  },
+  {
+    path: '/conic_line_border_res',
+    component: () => import('../views/Gradient/conic_line_border_res.vue')
+  },
+  {
+    path: '/light_shadow_border_res',
+    component: () => import('../views/Gradient/light_shadow_border_res.vue')
+  },
+  {
+    path: '/circle_progress_res',
+    component: () => import('../views/Gradient/circle_progress_res.vue')
+  },
+  {
+    path: '/cool_light_shadow_res',
+    component: () => import('../views/Gradient/cool_light_shadow_res.vue')
+  },
+  {
+    path: '/arrow_symbol_res',
+    component: () => import('../views/Gradient/arrow_symbol_res.vue')
+  },
+  {
+    path: '/linear_line_border_res',
+    component: () => import('../views/Gradient/linear_line_border_res.vue')
+  },
+  {
+    path: '/maze_like_graph_res',
+    component: () => import('../views/Gradient/maze_like_graph_res.vue')
+  },
+  {
+    path: '/inscribed_angle_res',
+    component: () => import('../views/Gradient/inscribed_angle_res.vue')
+  },
+  {
+    path: '/progress_bar_animate_res',
+    component: () => import('../views/Gradient/progress_bar_animate_res.vue')
+  },
+  {
+    path: '/scroll_progress_bar_res',
+    component: () => import('../views/Gradient/scroll_progress_bar_res.vue')
+  },
+  {
+    path: '/stripe_character_res',
+    component: () => import('../views/Gradient/stripe_character_res.vue')
+  },
+  {
+    path: '/underline_res',
+    component: () => import('../views/Gradient/underline_res.vue')
+  },
+  {
+    path: '/img_changes_res',
+    component: () => import('../views/Gradient/img_changes_res.vue')
+  },
+  {
+    path: '/words_gradual_appearance_res',
+    component: () => import('../views/Gradient/words_gradual_appearance_res.vue')
+  },
+  {
+    path: '/img_transform_res',
+    component: () => import('../views/Gradient/img_transform_res.vue')
+  },
+  {
+    path: '/bubble_button_click_effect_res',
+    component: () => import('../views/Gradient/bubble_button_click_effect_res.vue')
+  },
+  {
+    path: '/coupon_wave_shape_res',
+    component: () => import('../views/Gradient/coupon_wave_shape_res.vue')
+  },
+  {
+    path: '/stage_light_focus_res',
+    component: () => import('../views/Gradient/stage_light_focus_res.vue')
+  },
+  {
+    path: '/wave_border_res',
+    component: () => import('../views/Gradient/wave_border_res.vue')
+  },
+  {
+    path: '/wavy_underline_res',
+    component: () => import('../views/Gradient/wavy_underline_res.vue')
+  },
+  {
+    path: '/wave_progress_box_res',
+    component: () => import('../views/Gradient/wave_progress_box_res.vue')
+  },
+  {
+    path: '/artistic_bg_res',
+    component: () => import('../views/Gradient/artistic_bg_res.vue')
+  },
   // Mix
   // 3D
   // Animate

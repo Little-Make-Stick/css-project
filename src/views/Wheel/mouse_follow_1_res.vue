@@ -15,7 +15,7 @@
         data() {
             return {
                 list_x: new Array(48),
-                list_y: new Array(17), // 预留26px, 
+                list_y: new Array(21), // 预留26px, 
             }
         },
         watch: {},
@@ -29,8 +29,11 @@
     }
 </script>
 <style lang="scss" scoped>
+    
     .mouse-follow-1-res-contain {
         height: 100%;
+        width: 100%;
+        overflow: hidden;
 
         .mouse-follow-1-bg {
             width: 100%;
@@ -43,8 +46,6 @@
 
             .box-list {
                 width: 100%;
-                height: calc(100% - 26px);
-                padding: 13px 0;
                 position: absolute;
                 top: 0;
                 .h-list{

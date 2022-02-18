@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='mouse-follow-2-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"
@@ -17,7 +17,12 @@
         data(){
             return{
                 demand: ``,
-                keyKnowage: ``,
+                keyKnowage: `
+                <ul>
+                    <li>障眼法，通过将屏幕铺满 div 进行控制鼠标跟随</li>
+                    <li>通过 hover 以及 transtion 改变元素的透明度</li>
+                </ul>
+                `,
                 difficult: ``,
                 html: ``,
                 js: ``,

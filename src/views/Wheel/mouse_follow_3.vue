@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='mouse-follow-3-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"
