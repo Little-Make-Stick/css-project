@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='conic-line-border-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"
@@ -17,7 +17,11 @@
         data(){
             return{
                 demand: ``,
-                keyKnowage: ``,
+                keyKnowage: `
+                <ul>
+                    <li>利用角向渐变 <span class="inline-code">conic-gradient</span> 与遮罩实现线条 border 效果</li>
+                </ul>
+                `,
                 difficult: ``,
                 html: ``,
                 js: ``,

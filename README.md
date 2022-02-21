@@ -189,3 +189,22 @@ p{
       document.close();
   }
   ```
+
+### font-family
+一些中文字体，例如font-family: '宋体'，由于字符编码的问题，少部分浏览器解释这个代码的时候，中文出现乱码.
+通常会转化成对应的英文写法或者是对应的 unicode 编码，font-family:'宋体' -> font-family: '\5b8b\4f53'。
+
+```css
+font-family: tahoma, arial, 'Hiragino Sans GB', '\5b8b\4f53', sans-serif;
+```
+1. 使用 tahoma 作为首选的西文字体，小字号下结构清晰端整、阅读辨识容易；
+2. 用户电脑未预装 tohoma，则选择 arial 作为替代的西文字体，覆盖 windows 和 MAC OS；
+3. Hiragino Sans GB 为冬青黑体，首选的中文字体，保证了 MAC 用户的观看体验；
+4. Windows 下没有预装冬青黑体，则使用 '\5b8b\4f53' 宋体为替代的中文字体方案，小字号下有着不错的效果；
+5. 最后使用无衬线系列字体 sans-serif 结尾，保证旧版本操作系统用户能选中一款电脑预装的无衬线字体，向下兼容。
+
+阶段字体定义规则的建议:
+* 尽量使用系统默认字体
+* 兼顾中西，西文在前，中文在后
+* 兼顾多操作系统
+* 兼顾旧操作系统，以字体族系列 serif 和 sans-serif 结尾

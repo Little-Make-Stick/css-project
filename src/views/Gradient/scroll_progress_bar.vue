@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='scroll-progress-bar-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"
@@ -7,7 +7,7 @@
             :html="html"
             :js="js"
             :css="css">
-
+            
         </knowage-result>
     </div> 
 </template>
