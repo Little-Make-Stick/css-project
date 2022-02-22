@@ -26,6 +26,7 @@
         position: relative;
         border-radius: 14px;
         border: 5px solid green;
+        /* background-color: rgba(0, 255, 0,.3); */
         &::before{
             content: '';
             width: calc(100% + 10px);
@@ -34,16 +35,17 @@
             left: -5px;
             top: -5px;
             border-radius: 8px;
-            background: conic-gradient(transparent 0deg, transparent 90deg, #fff 90deg, #fff 0deg);
-            background: conic-gradient(transparent 90deg, transparent 180deg, #fff 180deg,);
-            /* animation: conicBorderAnimate 4s linear infinite; */
+            /* background: conic-gradient(from -45deg,#fff -45deg, transparent -45deg, transparent 90deg, #fff 90deg); */
+            /* background: conic-gradient(from -45deg,#fff 110deg, transparent 110deg, transparent 160deg, #fff 160deg); */
+            animation: conicBorderAnimate 4s linear infinite ;
         }
     }
 }
 @keyframes conicBorderAnimate{
     @for $i from 0 through 100 {
         #{$i}%{
-            background: conic-gradient(transparent #{$i * 3.6deg}, transparent #{$i * 3.6deg + 90deg}, #fff #{$i * 3.6deg + 90deg}, #fff #{$i * 3.6deg});
+            /* background: conic-gradient(#fff #{$i * 3deg}, transparent #{$i * 3deg}, transparent #{$i * 3.3deg + 90deg}, #fff #{$i * 3.3deg + 90deg}); */
+            background: conic-gradient(from -45deg, #fff #{$i * 3.6deg - 45deg}, transparent #{$i * 3.6deg - 25deg}, transparent #{$i * 3.6deg + 25deg}, #fff #{$i * 3.6deg + 25deg});
         }
     }
 }

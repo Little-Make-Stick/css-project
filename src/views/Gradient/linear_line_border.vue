@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='linear-line-border-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"
@@ -7,7 +7,7 @@
             :html="html"
             :js="js"
             :css="css">
-
+            
         </knowage-result>
     </div> 
 </template>
@@ -17,7 +17,12 @@
         data(){
             return{
                 demand: ``,
-                keyKnowage: ``,
+                keyKnowage: `
+                <ul>
+                    <li>利用线性渐变 linear-gradient 与遮罩实现线条 border 效果</li>
+                    <li>利用角向渐变 conic-gradient 与遮罩实现线条 border 效果</li>
+                </ul>
+                `,
                 difficult: ``,
                 html: ``,
                 js: ``,
