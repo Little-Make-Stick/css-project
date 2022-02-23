@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='progress-bar-animate-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"

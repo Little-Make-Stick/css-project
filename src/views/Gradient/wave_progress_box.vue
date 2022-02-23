@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='wave-progress-box-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"

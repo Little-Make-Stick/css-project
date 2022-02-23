@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='stripe-character-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"
@@ -7,7 +7,7 @@
             :html="html"
             :js="js"
             :css="css">
-
+            
         </knowage-result>
     </div> 
 </template>
@@ -17,7 +17,11 @@
         data(){
             return{
                 demand: ``,
-                keyKnowage: ``,
+                keyKnowage: `
+                <ul>
+                    <li>重点在于渐变色白色与透明色的重复渐变。</li>
+                </ul>
+                `,
                 difficult: ``,
                 html: ``,
                 js: ``,

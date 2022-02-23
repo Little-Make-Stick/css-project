@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='bubble-button-click-effect-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"

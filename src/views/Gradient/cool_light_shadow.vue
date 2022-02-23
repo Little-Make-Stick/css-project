@@ -1,5 +1,5 @@
 <template>
-    <div class='gtas-page-contain'>
+    <div class='cool-light-shadow-contain'>
         <knowage-result
             :demand="demand"
             :keyKnowage="keyKnowage"
