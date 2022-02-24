@@ -362,7 +362,7 @@ const routes = [
         component: () => import('../views/Gradient/maze_like_graph.vue')
       },
       {
-        path: '/inscribed_angle',
+        path: '/linear_inscribed_angle',
         meta: { title: '内切角', },
         component: () => import('../views/Gradient/inscribed_angle.vue')
       },
@@ -965,7 +965,7 @@ const routes = [
     component: () => import('../views/Gradient/maze_like_graph_res.vue')
   },
   {
-    path: '/inscribed_angle_res',
+    path: '/linear_inscribed_angle_res',
     component: () => import('../views/Gradient/inscribed_angle_res.vue')
   },
   {

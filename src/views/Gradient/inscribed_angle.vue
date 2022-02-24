@@ -7,7 +7,7 @@
             :html="html"
             :js="js"
             :css="css">
-
+            
         </knowage-result>
     </div> 
 </template>
@@ -17,11 +17,35 @@
         data(){
             return{
                 demand: ``,
-                keyKnowage: ``,
+                keyKnowage: `
+                <ul>
+                    <li>利用多重线性渐变及单个元素可以设置多层渐变叠加实现</li>
+                </ul>
+                `,
                 difficult: ``,
-                html: ``,
+                html: `
+                <div class='inscribed-angle-res-contain'>
+                    <div class="inscribed-angle"></div>
+                </div>
+                `,
                 js: ``,
-                css: ``,
+                css: `
+                .inscribed-angle-res-contain{
+                    height: 100%;
+                    display: flex;
+                    .inscribed-angle{
+                        margin: auto;
+                        width: 350px;
+                        height: 60px;
+                        background: linear-Gradient(135deg, #fff 15px, tomato 0) top left, 
+                                    linear-Gradient(-135deg, #fff 15px, tomato 0) top right,
+                                    linear-Gradient(45deg, #fff 15px, tomato 0) bottom left,
+                                    linear-Gradient(-45deg, #fff 15px, tomato 0) bottom right;
+                        background-repeat: no-repeat;
+                        background-size: 50% 50%;
+                    }
+                }
+                `,
             }
         },
         components:{

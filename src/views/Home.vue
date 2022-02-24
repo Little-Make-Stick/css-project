@@ -194,7 +194,7 @@
               { key: '/linear_line_border', title: 'linear线条border' },
 
               { key: '/maze_like_graph', title: '类迷宫图形' },
-              { key: '/inscribed_angle', title: '内切角' },
+              { key: '/linear_inscribed_angle', title: '内切角' },
               { key: '/progress_bar_animate', title: '进度条运动' },
               { key: '/scroll_progress_bar', title: '滚动进度条' },
               { key: '/stripe_character', title: '条纹字' },
